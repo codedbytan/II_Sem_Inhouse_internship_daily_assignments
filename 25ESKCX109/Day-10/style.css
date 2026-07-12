@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #334155;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Red border shown when a field fails validation (added from JS) */
+.invalid {
+    border-color: #ef4444;
+}
+
+.error-msg {
+    display: block;
+    color: #ef4444;
+    font-size: 12px;
+    min-height: 16px;
+    margin-top: 3px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.success-msg {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}

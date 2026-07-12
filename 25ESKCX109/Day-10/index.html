@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - Registration Form with Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<div class="container">
+
+    <!-- novalidate turns off the browser's default popups so our own JS handles validation -->
+    <form id="registrationForm" novalidate>
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+        <small class="error-msg" id="nameError"></small>
+
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <small class="error-msg" id="emailError"></small>
+
+        <label>Roll Number</label>
+        <input type="text" id="roll" placeholder="e.g. 25ESKCX109">
+        <small class="error-msg" id="rollError"></small>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="10-digit mobile number">
+        <small class="error-msg" id="mobileError"></small>
+
+        <label>Branch</label>
+        <select id="branch">
+            <option value="">Select Branch</option>
+            <option>Data Science (DS)</option>
+            <option>Computer Science (CS)</option>
+            <option>IT</option>
+            <option>ECE</option>
+        </select>
+        <small class="error-msg" id="branchError"></small>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Minimum 6 characters">
+        <small class="error-msg" id="passwordError"></small>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+        <small class="error-msg" id="confirmError"></small>
+
+        <button type="submit">Register</button>
+
+        <p class="success-msg" id="successMsg"></p>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
